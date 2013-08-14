@@ -1,0 +1,331 @@
+//CUSTOM STYLES NECESSARY TO ACCOMODATE DESIGN
+
+$default-float: left;
+$transWhite: rgba(255, 255, 255, 0.45);
+$transBlacklight: rgba(0, 0, 0, .2);
+$transBlack: rgba(0, 0, 0, .4);
+$transBlackDark: rgba(0, 0, 0, .8);
+$baywoodRed: #fc857e;
+
+@import "compass/css3";
+
+html {
+  background-color: transparent;
+}
+
+body {
+  background-color: transparent;
+}
+
+header#site-header {
+  min-height: 360px;
+}
+
+.panel {
+  margin-top: 200px;
+  background-color: $transBlackDark !important;
+  border: solid thin $transWhite;
+  p, h2, a {
+    color: white !important;
+  }
+}
+
+.top-bar-section .dropdown {
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.side-nav.interior-menu.right {
+  z-index: 1000;
+  right: 0 !important;
+  top: 50px;
+  position: fixed;
+  width: 50px;
+
+  li {
+    margin: 3px 0;
+    width: 50px;
+
+    a {
+      padding: 12px 0 12px 55px;
+      margin: 0 -45px 0 0;
+      color: white;
+      background: url('http://placehold.it/35x35/ffffff/ffffff&text=') 7px center no-repeat $transBlack;
+
+      &:hover {
+        color: #00FF00;
+        background: url('http://placehold.it/35x35/00FF00/00FF00') 10px center no-repeat $transBlack;
+
+      }
+    }
+  }
+
+  li:hover a {
+    margin: 0 0 0 -150px;
+  }
+
+}
+
+.contain-to-grid {
+  background-color: $transBlack;
+}
+
+.contain-to-grid .top-bar {
+  margin-bottom: 0;
+}
+
+#content-wrapper {
+  min-height: 700px;
+
+  div {
+
+  }
+}
+
+.name h1 a img {
+  @include box-shadow(0 0 5px rgba(0, 0, 0, .4));
+}
+
+.stickyFooter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.top-bar {
+  ul {
+    li {
+
+      .label {
+        color: white;
+      }
+      a {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+#footer-top {
+
+  ul.main-menu {
+
+    li {
+      position: relative;
+      a {
+        background-color: rgba(0, 0, 0, .6);
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        color: white;
+        width: 98%;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        img {
+          display: block;
+          margin: 0 auto;
+          width: 180px;
+          position: relative;
+          margin-top: 10px;
+        }
+
+      }
+    }
+
+    li:hover {
+
+      a {
+        border-top: 2px solid $baywoodRed;
+
+        color: $baywoodRed;
+      }
+    }
+  }
+}
+
+#footer-bottom {
+  background: url('../images/footer-bg.png') top left repeat;
+  margin-top: 21px;
+  padding: 20px;
+  .footer-interior-menu {
+    li a {
+      font-size: 1.15em;
+    }
+  }
+  p, a {
+    margin-bottom: 0;
+    color: #666;
+    font-size: .8em;
+    padding: 0;
+  }
+  .footer-contact {
+    span:first-child {
+
+      padding: 0 1em 0 0;
+    }
+    span {
+      padding-left: 1em;
+    }
+  }
+
+  .social-icons.inline-list {
+    margin-bottom: 0;
+    float: left;
+    li {
+
+      font-size: 2.5em;
+      margin: 0 4px;
+      padding: 0;
+      a {
+        color: #666666;
+
+        &:hover {
+          color: #333333;
+        }
+      }
+    }
+  }
+  .copyright p {
+    margin-top: 4px;
+  }
+
+}
+
+.ui-header .ui-btn-inner, .ui-footer .ui-btn-inner, .ui-mini .ui-btn-inner {
+  font-size: 8px;
+}
+
+.mobile-footer.ui-footer {
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  h4 {
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .panel {
+  margin-top:0;}
+
+    header#site-header {
+    min-height: 100px;
+  }
+  #mobile-footer-menu {
+
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    .ui-header .ui-btn-inner, .ui-footer .ui-btn-inner, .ui-mini .ui-btn-inner {
+      font-size: 8px;
+    }
+  }
+  .stickyFooter {
+    position: relative;
+  }
+
+  body {
+    min-height: 400px;
+  }
+
+  #footer-bottom .social-icons.inline-list {
+    padding-left: 20px;
+
+    li {
+
+      a {
+        font-size: .5em;
+      }
+    }
+  }
+  .name a img {
+    max-width: 64px;
+    height: auto;
+    display: block;
+  }
+  .top-bar {
+    background-color: $transBlack !important;
+  }
+  .side-nav {
+    width: 260px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    .logo img {
+      width: 300px;
+    }
+    li {
+      margin: 0 auto;
+
+      background-color: $transBlackDark;
+      border-bottom: solid thin rgba(255, 255, 255, .1);
+
+      &:first-child {
+        background-color: transparent;
+        margin: 0;
+      }
+      &.mobile-search {
+        padding: 20px;
+      }
+      a {
+        text-transform: uppercase;
+        color: darken(white, 10%);
+
+      }
+
+      &.active {
+
+        a, a:first-child {
+          color: white;
+        }
+      }
+    }
+  }
+
+  logo a img {
+
+  }
+
+  #content-wrapper {
+    min-height: 200px;
+  }
+  .side-nav
+  li.mobile-search {
+
+    a {
+      color: #fff;
+
+    }
+
+  }
+  #content-wrapper {
+    margin-top: 0 !important;
+    padding-top: 20px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-device-width: 1024px) {
+
+  #content-wrapper {
+    padding-top: 0px;
+  }
+  .top-bar-section ul li > a {
+    font-size: .8em;
+  }
+
+  .top-bar-section li a:not(.button) {
+    padding: 0 8px;
+  }
+
+  #footer-bottom {
+
+    font-size: .5em;
+  }
+
+  #footer-top ul.main-menu li a {
+    margin-left: -6px;
+  }
+
+}

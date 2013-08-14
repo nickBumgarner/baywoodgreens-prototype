@@ -1,0 +1,325 @@
+/* line 12, ../sass/baywood-greens-custom.scss */
+html {
+  background-color: transparent;
+}
+
+/* line 16, ../sass/baywood-greens-custom.scss */
+body {
+  background-color: transparent;
+}
+
+/* line 20, ../sass/baywood-greens-custom.scss */
+header#site-header {
+  min-height: 360px;
+}
+
+/* line 24, ../sass/baywood-greens-custom.scss */
+.panel {
+  margin-top: 200px;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  border: solid thin rgba(255, 255, 255, 0.45);
+}
+/* line 28, ../sass/baywood-greens-custom.scss */
+.panel p, .panel h2, .panel a {
+  color: white !important;
+}
+
+/* line 33, ../sass/baywood-greens-custom.scss */
+.top-bar-section .dropdown {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 37, ../sass/baywood-greens-custom.scss */
+.side-nav.interior-menu.right {
+  z-index: 1000;
+  right: 0 !important;
+  top: 50px;
+  position: fixed;
+  width: 50px;
+}
+/* line 44, ../sass/baywood-greens-custom.scss */
+.side-nav.interior-menu.right li {
+  margin: 3px 0;
+  width: 50px;
+}
+/* line 48, ../sass/baywood-greens-custom.scss */
+.side-nav.interior-menu.right li a {
+  padding: 12px 0 12px 55px;
+  margin: 0 -45px 0 0;
+  color: white;
+  background: url("http://placehold.it/35x35/ffffff/ffffff&text=") 7px center no-repeat rgba(0, 0, 0, 0.4);
+}
+/* line 54, ../sass/baywood-greens-custom.scss */
+.side-nav.interior-menu.right li a:hover {
+  color: #00FF00;
+  background: url("http://placehold.it/35x35/00FF00/00FF00") 10px center no-repeat rgba(0, 0, 0, 0.4);
+}
+/* line 62, ../sass/baywood-greens-custom.scss */
+.side-nav.interior-menu.right li:hover a {
+  margin: 0 0 0 -150px;
+}
+
+/* line 68, ../sass/baywood-greens-custom.scss */
+.contain-to-grid {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 72, ../sass/baywood-greens-custom.scss */
+.contain-to-grid .top-bar {
+  margin-bottom: 0;
+}
+
+/* line 76, ../sass/baywood-greens-custom.scss */
+#content-wrapper {
+  min-height: 700px;
+}
+
+/* line 84, ../sass/baywood-greens-custom.scss */
+.name h1 a img {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+/* line 88, ../sass/baywood-greens-custom.scss */
+.stickyFooter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 99, ../sass/baywood-greens-custom.scss */
+.top-bar ul li .label {
+  color: white;
+}
+/* line 102, ../sass/baywood-greens-custom.scss */
+.top-bar ul li a {
+  text-transform: uppercase;
+}
+
+/* line 113, ../sass/baywood-greens-custom.scss */
+#footer-top ul.main-menu li {
+  position: relative;
+}
+/* line 115, ../sass/baywood-greens-custom.scss */
+#footer-top ul.main-menu li a {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  width: 98%;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+/* line 125, ../sass/baywood-greens-custom.scss */
+#footer-top ul.main-menu li a img {
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  position: relative;
+  margin-top: 10px;
+}
+/* line 138, ../sass/baywood-greens-custom.scss */
+#footer-top ul.main-menu li:hover a {
+  border-top: 2px solid #fc857e;
+  color: #fc857e;
+}
+
+/* line 147, ../sass/baywood-greens-custom.scss */
+#footer-bottom {
+  background: url("../images/footer-bg.png") top left repeat;
+  margin-top: 21px;
+  padding: 20px;
+}
+/* line 152, ../sass/baywood-greens-custom.scss */
+#footer-bottom .footer-interior-menu li a {
+  font-size: 1.15em;
+}
+/* line 156, ../sass/baywood-greens-custom.scss */
+#footer-bottom p, #footer-bottom a {
+  margin-bottom: 0;
+  color: #666;
+  font-size: .8em;
+  padding: 0;
+}
+/* line 163, ../sass/baywood-greens-custom.scss */
+#footer-bottom .footer-contact span:first-child {
+  padding: 0 1em 0 0;
+}
+/* line 167, ../sass/baywood-greens-custom.scss */
+#footer-bottom .footer-contact span {
+  padding-left: 1em;
+}
+/* line 172, ../sass/baywood-greens-custom.scss */
+#footer-bottom .social-icons.inline-list {
+  margin-bottom: 0;
+  float: left;
+}
+/* line 175, ../sass/baywood-greens-custom.scss */
+#footer-bottom .social-icons.inline-list li {
+  font-size: 2.5em;
+  margin: 0 4px;
+  padding: 0;
+}
+/* line 180, ../sass/baywood-greens-custom.scss */
+#footer-bottom .social-icons.inline-list li a {
+  color: #666666;
+}
+/* line 183, ../sass/baywood-greens-custom.scss */
+#footer-bottom .social-icons.inline-list li a:hover {
+  color: #333333;
+}
+/* line 189, ../sass/baywood-greens-custom.scss */
+#footer-bottom .copyright p {
+  margin-top: 4px;
+}
+
+/* line 195, ../sass/baywood-greens-custom.scss */
+.ui-header .ui-btn-inner, .ui-footer .ui-btn-inner, .ui-mini .ui-btn-inner {
+  font-size: 8px;
+}
+
+/* line 199, ../sass/baywood-greens-custom.scss */
+.mobile-footer.ui-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* line 204, ../sass/baywood-greens-custom.scss */
+.mobile-footer.ui-footer h4 {
+  color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 211, ../sass/baywood-greens-custom.scss */
+  .panel {
+    margin-top: 0;
+  }
+
+  /* line 214, ../sass/baywood-greens-custom.scss */
+  header#site-header {
+    min-height: 100px;
+  }
+
+  /* line 217, ../sass/baywood-greens-custom.scss */
+  #mobile-footer-menu {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  /* line 222, ../sass/baywood-greens-custom.scss */
+  #mobile-footer-menu .ui-header .ui-btn-inner, #mobile-footer-menu .ui-footer .ui-btn-inner, #mobile-footer-menu .ui-mini .ui-btn-inner {
+    font-size: 8px;
+  }
+
+  /* line 226, ../sass/baywood-greens-custom.scss */
+  .stickyFooter {
+    position: relative;
+  }
+
+  /* line 230, ../sass/baywood-greens-custom.scss */
+  body {
+    min-height: 400px;
+  }
+
+  /* line 234, ../sass/baywood-greens-custom.scss */
+  #footer-bottom .social-icons.inline-list {
+    padding-left: 20px;
+  }
+  /* line 239, ../sass/baywood-greens-custom.scss */
+  #footer-bottom .social-icons.inline-list li a {
+    font-size: .5em;
+  }
+
+  /* line 244, ../sass/baywood-greens-custom.scss */
+  .name a img {
+    max-width: 64px;
+    height: auto;
+    display: block;
+  }
+
+  /* line 249, ../sass/baywood-greens-custom.scss */
+  .top-bar {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+  }
+
+  /* line 252, ../sass/baywood-greens-custom.scss */
+  .side-nav {
+    width: 260px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
+  /* line 256, ../sass/baywood-greens-custom.scss */
+  .side-nav .logo img {
+    width: 300px;
+  }
+  /* line 259, ../sass/baywood-greens-custom.scss */
+  .side-nav li {
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: solid thin rgba(255, 255, 255, 0.1);
+  }
+  /* line 265, ../sass/baywood-greens-custom.scss */
+  .side-nav li:first-child {
+    background-color: transparent;
+    margin: 0;
+  }
+  /* line 269, ../sass/baywood-greens-custom.scss */
+  .side-nav li.mobile-search {
+    padding: 20px;
+  }
+  /* line 272, ../sass/baywood-greens-custom.scss */
+  .side-nav li a {
+    text-transform: uppercase;
+    color: #e6e6e6;
+  }
+  /* line 280, ../sass/baywood-greens-custom.scss */
+  .side-nav li.active a, .side-nav li.active a:first-child {
+    color: white;
+  }
+
+  /* line 291, ../sass/baywood-greens-custom.scss */
+  #content-wrapper {
+    min-height: 200px;
+  }
+
+  /* line 297, ../sass/baywood-greens-custom.scss */
+  .side-nav
+  li.mobile-search a {
+    color: #fff;
+  }
+
+  /* line 303, ../sass/baywood-greens-custom.scss */
+  #content-wrapper {
+    margin-top: 0 !important;
+    padding-top: 20px !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-device-width: 1024px) {
+  /* line 311, ../sass/baywood-greens-custom.scss */
+  #content-wrapper {
+    padding-top: 0px;
+  }
+
+  /* line 314, ../sass/baywood-greens-custom.scss */
+  .top-bar-section ul li > a {
+    font-size: .8em;
+  }
+
+  /* line 318, ../sass/baywood-greens-custom.scss */
+  .top-bar-section li a:not(.button) {
+    padding: 0 8px;
+  }
+
+  /* line 322, ../sass/baywood-greens-custom.scss */
+  #footer-bottom {
+    font-size: .5em;
+  }
+
+  /* line 327, ../sass/baywood-greens-custom.scss */
+  #footer-top ul.main-menu li a {
+    margin-left: -6px;
+  }
+}
