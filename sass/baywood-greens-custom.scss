@@ -1,20 +1,56 @@
 //CUSTOM STYLES NECESSARY TO ACCOMODATE DESIGN
 
 $default-float: left;
+$white: #ffffff;
 $transWhite: rgba(255, 255, 255, 0.45);
 $transBlacklight: rgba(0, 0, 0, .2);
+$black: #000000;
 $transBlack: rgba(0, 0, 0, .4);
 $transBlackDark: rgba(0, 0, 0, .8);
 $baywoodRed: #fc857e;
+$baywoodGreen: #588956;
 
 @import "compass/css3";
+@import "media-queries";
 
 html {
-  background-color: transparent;
+
+  @include min-screen(769px) {
+
+  }
+  background: url('../images/baywood-bg-inv.png') top left repeat-x white;
+
+  @media #{$small} {
+    background: url('../images/landing-page-bg.png') center center no-repeat #dedede;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+  }
+
 }
 
 body {
   background-color: transparent;
+  a, p {
+    font-family: "Trebuchet MS", Trebuchet, "Helvetica Neue", Verdana;
+    font-weight: normal;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald";
+  }
+
+  h2.block-title {
+    font-size: 18px;
+    font-family: "Trebuchet MS", Trebuchet;
+
+  }
+}
+
+#landing-page-search {
+  @include border-radius(999px);
+
 }
 
 header#site-header {
@@ -31,7 +67,7 @@ header#site-header {
 }
 
 .top-bar-section .dropdown {
-  background-color: rgba(0, 0, 0, .4);
+  background-color: $black;
 }
 
 .side-nav.interior-menu.right {
@@ -81,8 +117,26 @@ header#site-header {
   }
 }
 
+ul#landing-page-mobile-menu {
+  li {
+    list-style: none;
+    a.button {
+      margin-bottom: 1em;
+      background: $transBlack;
+      border-color: $transBlackDark;
+      &:hover {
+        background: $transBlackDark;
+      }
+
+    }
+  }
+}
+
 .name h1 a img {
-  @include box-shadow(0 0 5px rgba(0, 0, 0, .4));
+
+  @media #{$small} {
+    @include box-shadow(0 0 5px rgba(0, 0, 0, .4));
+  }
 }
 
 .stickyFooter {
@@ -113,6 +167,7 @@ header#site-header {
     li {
       position: relative;
       a {
+        font-family: "Oswald";
         background-color: rgba(0, 0, 0, .6);
         height: auto;
         position: absolute;
@@ -148,6 +203,8 @@ header#site-header {
   background: url('../images/footer-bg.png') top left repeat;
   margin-top: 21px;
   padding: 20px;
+  font-size: 15px;
+  font-weight: bold;
   .footer-interior-menu {
     li a {
       font-size: 1.15em;
@@ -209,9 +266,10 @@ header#site-header {
 @media only screen and (max-width: 767px) {
 
   .panel {
-  margin-top:0;}
+    margin-top: 0;
+  }
 
-    header#site-header {
+  header#site-header {
     min-height: 100px;
   }
   #mobile-footer-menu {
@@ -246,9 +304,18 @@ header#site-header {
     height: auto;
     display: block;
   }
-  .top-bar {
-    background-color: $transBlack !important;
+  .top-bar, .top-bar.expanded {
+    //background-color: $white;
+    //
+    //@media #{$small} {
+      background-color: $black;
+    //}
+
   }
+  //.top-bar .toggle-topbar.menu-icon a {
+  //  color:$baywoodRed;
+  //}
+
   .side-nav {
     width: 260px;
     padding-bottom: 50px;

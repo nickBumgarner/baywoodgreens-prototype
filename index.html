@@ -4,26 +4,19 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Baywood Greens - Home Page</title>
-  <link href="stylesheets/_normalize.css" rel="stylesheet" type="text/css"/>
-  <link href="stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css"/>
-  <script src="javascripts/vendor/custom.modernizr.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Baywood Greens - Home Page</title>
+    <link href="stylesheets/_normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css"/>
+    <script src="javascripts/vendor/custom.modernizr.js"></script>
 
-  <style>html {
-    background: url('images/baywood.jpg') center center no-repeat #dedede;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 100%;
-  }
+    <style>
 
-  .stickyFooter {
-    bottom: 0;
-    width: 100%;
-  }</style>
+        .stickyFooter {
+            bottom: 0;
+            width: 100%;
+        }</style>
 
 </head>
 
@@ -31,51 +24,63 @@
 
 <!-- Header and Nav -->
 
-<ul class="side-nav show-for-small text-center">
-  <li class="logo">
-    <a href="index.html">
-      <img src="images/baywood-greens-logo.png"/>
-    </a>
-  </li>
-  <li class="active"><a href="menu-page.html">Living</a></li>
-  <li><a href="menu-page.html">Golf</a></li>
-  <li><a href="menu-page.html">Restaraunt</a></li>
-  <li><a href="menu-page.html">Events</a></li>
-  <li><a href="menu-page.html">Location</a></li>
-  <li class="search mobile-search">
-    <form class="small-12">
-      <input type="" class="left small-9" placeholder="Search..."> <input type="submit" value="Search"
-                                                                          class="small button small-3 right">
-<!-- TODO:CHANGE GLOBAL NAVIGATION FROM HOMES TO LIVING -->
-    </form>
-  </li>
+<ul id="landing-page-mobile-menu" class="show-for-small text-center">
+    <li class="logo">
+        <a href="index.html">
+            <img src="images/baywood-greens-logo.png"/>
+        </a>
+    </li>
+    </li>
+    <li class="small-12 columns">
+
+        <form>
+            <input id="landing-page-search" placeholder="Search..."type="search">
+        </form>
+
+    </li>
+    <li class="active small-6 columns">
+        <a class="button expand round small" href="menu-page.html">Living</a>
+    </li>
+    <li class="small-6 columns">
+        <a class="button expand round small" href="menu-page.html">Golf</a>
+    </li>
+    <li class="small-6 columns">
+        <a class="button expand round small" href="menu-page.html">Restaraunt</a>
+    </li>
+    <li class="small-6 columns">
+        <a class="button expand round small" href="menu-page.html">Events</a>
+    </li>
+    <li class="small-12 columns">
+        <a class="button expand round small" href="http://maps.apple.com/?q=Baywood+Greens,+32267%20Clubhouse%20Way,+Millsboro,+DE,+19966">Location</a>
+    </li>
+
 </ul>
 <div class="contain-to-grid">
-  <nav class="top-bar hide-for-small">
-    <ul class="title-area">
-      <!-- Title Area -->
-      <li class="name large-12 small-2">
-        <h1>
-          <a href="index.html">
-            <img src="images/baywood-greens-logo.png"/>
-          </a>
-        </h1>
-      </li>
-      <li class="toggle-topbar menu-icon"><a href="menu-page.html"><span>menu</span></a></li>
-    </ul>
-    <section class="top-bar-section">
-      <ul class="right">
-        <li class="search ">
-          <form>
-            <input type="search">
-          </form>
-        </li>
-        <li class="has-button">
-          <a class="small button" href="menu-page.html">Search</a>
-        </li>
-      </ul>
-    </section>
-  </nav>
+    <nav class="top-bar hide-for-small">
+        <ul class="title-area">
+            <!-- Title Area -->
+            <li class="name large-12 small-2">
+                <h1>
+                    <a href="index.html">
+                        <img src="images/baywood-greens-logo.png"/>
+                    </a>
+                </h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="menu-page.html"><span>menu</span></a></li>
+        </ul>
+        <section class="top-bar-section">
+            <ul class="right">
+                <li class="search ">
+                    <form>
+                        <input type="search">
+                    </form>
+                </li>
+                <li class="has-button">
+                    <a class="small button" href="menu-page.html">Search</a>
+                </li>
+            </ul>
+        </section>
+    </nav>
 </div>
 <!-- End Navigation -->
 
@@ -85,6 +90,20 @@
 
 
 <div id="content-wrapper">
+    <div class="row hide-for-small">
+        <div class="large-10 large-offset-1 panel">
+            <h2 class="block-title">Recent News</h2>
+            <hr/>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+                tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+                semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
+                ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+                Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac
+                dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus,
+                tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi,
+                tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+        </div>
+    </div>
 
 </div>
 
@@ -94,54 +113,55 @@
 <!-- Footer -->
 
 <footer id="footer" class="stickyFooter hide-for-small">
-  <div id="footer-top">
-    <div class="large-12 columns">
-      <div class="row">
-        <ul class="small-block-grid-5 hide-for-small main-menu">
-          <li><a href="menu-page.html"><img src="http://placehold.it/250x180/333333/cccccc"/>Living</a></li>
-          <li><a href="menu-page.html"><img src="http://placehold.it/250x180/333333/cccccc"/>Golf</a></li>
-          <li><a href="menu-page.html"><img src="http://placehold.it/250x180/333333/cccccc"/>Restaraunt</a></li>
-          <li><a href="menu-page.html"><img src="http://placehold.it/250x180/333333/cccccc"/>Events</a></li>
-          <li><a href="menu-page.html"><img src="http://placehold.it/250x180/333333/cccccc"/>Location</a></li>
-        </ul>
+    <div id="footer-top">
+        <div class="large-12 columns">
+            <div class="row">
+                <ul class="small-block-grid-5 hide-for-small main-menu">
+                    <li><a href="menu-page.html"><img src="http://placehold.it/250x180/333333/cccccc"/>Living</a></li>
+                    <li><a href="menu-page.html"><img src="http://placehold.it/250x180/333333/cccccc"/>Golf</a></li>
+                    <li><a href="menu-page.html"><img src="http://placehold.it/250x180/333333/cccccc"/>Restaraunt</a>
+                    </li>
+                    <li><a href="menu-page.html"><img src="http://placehold.it/250x180/333333/cccccc"/>Events</a></li>
+                    <li><a href="menu-page.html"><img src="http://placehold.it/250x180/333333/cccccc"/>Location</a></li>
+                </ul>
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div id="footer-bottom">
-    <div class="row">
-      <div class="large-4 columns footer-contact">
-        <p><span>Phone: (302) 947-9800</span> | <span> Toll Free (888) 844-2254</span><br/>
-          32267 Clubhouse Way, Long Neck, Delaware 19966</p>
-      </div>
-      <div class="large-4 columns copyright">
-        <a href="menu-page.html">Privacy Policy |</a>
-        <a href="menu-page.html">Disclaimer</a>
+    <div id="footer-bottom">
+        <div class="row">
+            <div class="large-4 columns footer-contact">
+                <p><span>Phone: (302) 947-9800</span> | <span> Toll Free (888) 844-2254</span><br/>
+                    32267 Clubhouse Way, Long Neck, Delaware 19966</p>
+            </div>
+            <div class="large-4 columns copyright">
+                <a href="menu-page.html">Privacy Policy |</a>
+                <a href="menu-page.html">Disclaimer</a>
 
-        <p>©2013. Baywood Greens. All Rights Reserved.</p>
-      </div>
+                <p>©2013. Baywood Greens. All Rights Reserved.</p>
+            </div>
 
-      <div class="large-4 columns">
-        <ul class="inline-list social-icons">
-          <li><a href="#"><i class="social foundicon-rss"></i></a></li>
-          <li><a href="#"><i class="social foundicon-instagram"></i></a></li>
-          <li><a href="#"><i class="social foundicon-pinterest"></i></a></li>
-          <li><a href="#"><i class="social foundicon-clickr"></i></a></li>
-          <li><a href="#"><i class="social foundicon-youtube"></i></a></li>
-          <li><a href="#"><i class="social foundicon-linkedin"></i></a></li>
-          <li><a href="#"><i class="social foundicon-twitter"></i></a></li>
-          <li><a href="#"><i class="social foundicon-facebook"></i></a></li>
+            <div class="large-4 columns">
+                <ul class="inline-list social-icons">
+                    <li><a href="#"><i class="social foundicon-rss"></i></a></li>
+                    <li><a href="#"><i class="social foundicon-instagram"></i></a></li>
+                    <li><a href="#"><i class="social foundicon-pinterest"></i></a></li>
+                    <li><a href="#"><i class="social foundicon-clickr"></i></a></li>
+                    <li><a href="#"><i class="social foundicon-youtube"></i></a></li>
+                    <li><a href="#"><i class="social foundicon-linkedin"></i></a></li>
+                    <li><a href="#"><i class="social foundicon-twitter"></i></a></li>
+                    <li><a href="#"><i class="social foundicon-facebook"></i></a></li>
 
-        </ul>
-      </div>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
 </footer>
 
 <script>
-  document.write('<script src=' +
-      ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-      '.js><\/script>')
+    document.write('<script src=' +
+            ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+            '.js><\/script>')
 </script>
 
 <script src="javascripts/foundation/foundation.js"></script>
@@ -178,7 +198,7 @@
 
 
 <script>
-  $(document).foundation();
+    $(document).foundation();
 </script>
 </body>
 </html>
